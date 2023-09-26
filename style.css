@@ -98,7 +98,7 @@ html {
     
 }
 
-
+/*
 @media (max-width: 576px) {
     .home-nav {
         width: 100%;
@@ -118,7 +118,7 @@ html {
     margin-left: 110px;
 }
 
-}
+}*/
 
 @media(max-width: 768px) {
     .home-nav {
@@ -172,43 +172,130 @@ html {
     
 }
 
-@media(max-width: 992px) {
+@media(min-width: 769px) and (max-width: 992px) {
   .home-nav {
     padding: 30px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
+    gap: 45px;
   }
 
   .home-nav ul {
-    gap: 30px;
-    padding-bottom: 10px;
-    margin: 0;
+    gap: 20px;
+    margin: 0 auto;
   }
 
   .home-nav ul li {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 0;
   }
 
   .icons {
-    gap: 30px;
-    margin: 0;
-    font-size: 1.2rem;
-    padding: 0;
+    gap: 25px;
+    margin: 0 auto;
+    font-size: 0.2rem;
+    padding: 0 auto;
   }
 
   .home-nav h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0;
     padding: 0;
+  }
+
+  .home-nav .fa-solid {
+    display: none;
+  }
+
+  .home-nav .fa-xmark {
+    display: none;
   }
     
 }
 
+@media(min-width: 993px) and (max-width: 1200px) {
+    .home-nav {
+        padding: 30px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+      }
+    
+      .home-nav ul {
+        gap: 25px;
+        margin: 0;
+      }
+    
+      .home-nav ul li {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+    
+      .icons {
+        gap: 30px;
+        margin: 0;
+        font-size: 0.5rem;
+        padding: 0;
+      }
+    
+      .home-nav h1 {
+        font-size: 1.9rem;
+        margin: 0;
+        padding: 0;
+      }
+    
+      .home-nav .fa-solid {
+        display: none;
+      }
+}
 
+@media(min-width: 1201px) {
+    .home-nav {
+        padding: 45px 20px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 50px;
+      }
+    
+      .home-nav ul {
+        gap: 35px;
+        margin-left: 0;
+      }
+    
+      .home-nav ul li {
+        font-size: 1.8rem;
+        margin: 0;
+      }
+    
+      .icons {
+        gap: 45px;
+        margin: 0;
+        font-size: 1.5rem;
+        padding: 0;
+      }
+    
+      .home-nav h1 {
+        font-size: 1.9rem;
+        margin: 0;
+        padding: 0;
+      }
+    
+      .home-nav .fa-solid {
+        display: none;
+      }
+
+      .home-nav .fa-xmark {
+        display: none;
+      }
+}
 
 
 
