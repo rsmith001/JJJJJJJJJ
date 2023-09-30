@@ -105,7 +105,7 @@ html {
 
 .main-section h1 {
   margin-bottom: 20px;
-  font-size: 1rem;
+  font-size: .5rem;
   color:aliceblue;
 }
 
@@ -116,13 +116,14 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 
 iframe{
   width: 100%;
-  height: 170px;
+  height: 130px;
+  border: 1px solid white;
 }
 
 .hero-btn {
@@ -139,30 +140,9 @@ iframe{
     cursor: pointer;}
   
 
-/*
-@media (max-width: 576px) {
-    .home-nav {
-        width: 100%;
-
-    }
-
-    .home-nav h1 {
-        margin-left: 0;
-    }
-
-    .nav-links ul li {
-        font-size: 1.6rem;
-}
-
-.home-nav .fa-xmark {
-    font-size: 3rem;
-    margin-left: 110px;
-}
-
-}*/
 
 
-/*nabar media queries*/
+/*media queries*/
 @media(max-width: 768px) {
     .home-nav {
         height: 80px;
@@ -213,6 +193,19 @@ iframe{
     margin-top: 23px;
 }
 
+.main-section h1 {
+  font-size: 1rem;
+}
+
+.the-voice-videos, .video-2, .video-1 {
+  gap: 20px;
+}
+
+iframe{
+  height: 280px;
+}
+
+
     
 }
 
@@ -261,8 +254,11 @@ iframe{
   }
 
   iframe{
-    width: 100%;
-    height: 300px;
+    height: 460px;
+  }
+
+  .main-section h1 {
+    font-size: 2rem;
   }
     
 }
@@ -307,6 +303,23 @@ iframe{
       .home-nav .fa-solid {
         display: none;
       }
+
+      .main-section {
+        padding: 120px 30px 20px 30px;
+      }
+
+      .main-section h1 {
+        font-size: 2rem;
+      }
+
+      .the-voice-videos, .video-2, .video-1 {
+        gap: 50px;
+  }
+
+       iframe{
+       height: 470px;
+  }
+
 }
 
 @media(min-width: 1201px) {
@@ -350,8 +363,37 @@ iframe{
       .home-nav .fa-xmark {
         display: none;
       }
+
+      .main-section h1 {
+        font-size: 2.3rem;
+      }
+
+      .main-section {
+       width: 100%;
+       padding: 150px 30px 20px 30px;
+       margin: 0 auto;
+       text-align: center;
+}
+.main-section h1 {
+      font-size: 2.5rem;
 }
 
+.the-voice-videos, .video-2, .video-1 {
+      gap: 60px;
+}
+
+
+      iframe{
+        height: 600px;
+}
+
+      .hero-btn {
+        letter-spacing: 3px;
+        width: 60%;
+        padding: 30px 20px;
+        font-size: 2rem;
+      }
+}
 
 
 /*body styling*/
