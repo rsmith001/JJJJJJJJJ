@@ -23,9 +23,7 @@ html {
         background-color: rgba(0, 0, 0, 0.937);
 
 
-    }
-
-   
+    }  
 
     .home-nav h1 {
         font-size: 3rem;
@@ -98,6 +96,49 @@ html {
     
 }
 
+.main-section {
+  width: 100%;
+  padding: 100px 20px 20px 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-section h1 {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color:aliceblue;
+}
+
+.the-voice-videos, .video-2, .video-1 {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+iframe{
+  width: 100%;
+  height: 170px;
+}
+
+.hero-btn {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  background: transparent;
+  cursor: pointer;
+  }
+  .hero-btn:hover{
+    background-color:#f84337;
+    transition: 1s;
+    cursor: pointer;}
+  
+
 /*
 @media (max-width: 576px) {
     .home-nav {
@@ -120,6 +161,8 @@ html {
 
 }*/
 
+
+/*nabar media queries*/
 @media(max-width: 768px) {
     .home-nav {
         height: 80px;
@@ -169,6 +212,7 @@ html {
     margin-left: 40px;
     margin-top: 23px;
 }
+
     
 }
 
@@ -178,26 +222,28 @@ html {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
-    gap: 45px;
   }
 
   .home-nav ul {
-    gap: 20px;
+    gap: 25px;
     margin: 0 auto;
   }
 
   .home-nav ul li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 0;
   }
 
   .icons {
     gap: 25px;
-    margin: 0 auto;
-    font-size: 0.2rem;
-    padding: 0 auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .home-nav  .fa-brands {
+    font-size: 1.3rem;
   }
 
   .home-nav h1 {
@@ -212,6 +258,11 @@ html {
 
   .home-nav .fa-xmark {
     display: none;
+  }
+
+  iframe{
+    width: 100%;
+    height: 300px;
   }
     
 }
@@ -232,7 +283,7 @@ html {
       }
     
       .home-nav ul li {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin: 0;
       }
     
@@ -241,6 +292,10 @@ html {
         margin: 0;
         font-size: 0.5rem;
         padding: 0;
+      }
+
+      .home-nav  .fa-brands {
+        font-size: 1.4rem;
       }
     
       .home-nav h1 {
@@ -299,7 +354,25 @@ html {
 
 
 
+/*body styling*/
+
+body::before {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-body::before {
+    background-image: linear-gradient(rgba(17, 10, 4, 0.781), rgba(34, 16, 2, 0.6)), url(images/background-3.jpg);
+  }
 
 
 
-
+ 
