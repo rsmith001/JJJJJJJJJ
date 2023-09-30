@@ -205,6 +205,13 @@ iframe{
   height: 280px;
 }
 
+.hero-btn {
+        letter-spacing: 3px;
+        width: 60%;
+        padding: 10px 20px;
+        font-size: .5rem;
+      }
+
 
     
 }
@@ -258,6 +265,13 @@ iframe{
   }
 
   .main-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-btn {
+    letter-spacing: 3px;
+    width: 60%;
+    padding: 30px 20px;
     font-size: 2rem;
   }
     
@@ -318,6 +332,13 @@ iframe{
 
        iframe{
        height: 470px;
+  }
+
+  .hero-btn {
+    letter-spacing: 3px;
+    width: 60%;
+    padding: 30px 20px;
+    font-size: 2rem;
   }
 
 }
