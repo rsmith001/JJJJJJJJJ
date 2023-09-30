@@ -110,7 +110,10 @@ html {
   color:aliceblue;
 }
 
-.the-voice-videos, .video-2, .video-1 {
+.the-voice-videos,
+ .video-2, 
+ .video-1, 
+ .videos {
   margin: 0 auto;
   width: 98%;
   display: flex;
@@ -139,18 +142,27 @@ iframe{
 
   .hero-btn:hover,
   .music button:hover, 
-.music h3:hover{
+  .music h3:hover,
+  .video h2:hover, 
+  .videos a:hover,
+  form button {
     background-color:#f84337;
-    transition: 2s;
+    transition: 1s;
     cursor: pointer;
   }
 
-  .music a {
+  form button {
+    background:#f84337;
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  .music a, .videos a {
     color:rgba(248, 254, 255, 0.855);
     text-decoration: none;
   }
   
-  .music a:hover {
+  .music a:hover, .videos a:hover {
     text-decoration: underline;
   }
   
@@ -232,6 +244,91 @@ iframe{
     height: 100%;
     object-fit: cover;
     border: 2px solid #fff;
+}
+
+.video-div {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.video, .video iframe {
+  width: 100%;
+}
+
+.videos h2 {
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.contact {
+  width: 100%;
+  border: 1px solid red;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+form {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid rgb(154, 138, 138); 
+  border-radius: 5px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  color:rgba(248, 254, 255, 0.855);
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  background: transparent;
+  outline: none;
+  color: white;
+  border: 1px solid rgb(154, 138, 138); 
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  border: 1px solid rgb(154, 138, 138); 
+  outline: none;
+  color:rgba(248, 254, 255, 0.855);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  background: transparent;
+  border-radius: 5px;
+}
+
+form button,
+ .service-content button {
+    cursor: pointer;
+    border: 1px solid rgb(98, 21, 96);
+    animation: mymove 2s infinite;
+    
+}
+
+@keyframes mymove {
+  50% {border-color: rgb(255, 255, 255);
+      background-color: rgb(202, 43, 43);
+  }
+
+
 }
 
 
@@ -481,7 +578,7 @@ button {
         margin: 0 auto;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: row;
         gap: 50px;
       }
@@ -492,7 +589,7 @@ button {
       }
     
       .home-nav ul li {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         margin: 0;
       }
     
@@ -523,7 +620,7 @@ button {
 
       .main-section {
        width: 100%;
-       padding: 85px 30px 20px 30px;
+       padding: 120px 30px 20px 30px;
        margin: 0 auto;
        text-align: center;
 }
@@ -580,6 +677,14 @@ button {
       .music h3, 
     button {
       width: 380px; 
+    }
+
+    .video-div {
+      flex-direction: row;
+    }
+
+    .video, .video iframe {
+      min-height: 400px;
     }
 }
 
