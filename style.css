@@ -122,7 +122,7 @@ html {
 
 iframe{
   width: 100%;
-  height: 130px;
+  height: 140px;
   border: 1px solid white;
 }
 
@@ -134,16 +134,113 @@ iframe{
   background: transparent;
   cursor: pointer;
   }
-  .hero-btn:hover{
+
+
+  .hero-btn:hover,
+  .music button:hover, 
+.music h3:hover{
     background-color:#f84337;
-    transition: 1s;
-    cursor: pointer;}
+    transition: 2s;
+    cursor: pointer;
+  }
+
+  .music a {
+    color:rgba(248, 254, 255, 0.855);
+    text-decoration: none;
+  }
+  
+  .music a:hover {
+    text-decoration: underline;
+  }
+  
+    .music-video {
+      padding-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+    
+  .music-video h1 {
+        margin-top: 10px;
+        font-size: 4rem;
+        letter-spacing: 7px;
+        font-weight: bolder;
+        word-spacing: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+    }
+    
+    .musics {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    
+    .music {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .music h3, 
+    button {
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        border: none;
+        background-color: #ff867d;;
+        border: 1px solid #111;
+        color:#fff;
+        border: 2px solid whitesmoke;
+    }
+    
+    .music h2 {
+        letter-spacing: 5px;
+        color: #fff;
+    }
+  
+
+  .musics button:visited, 
+.musics h3:visited,
+.codepen h2:visited {
+    color:#eba9d1;
+}
+
+
+
+.foto {
+    width: 90%;
+    height: 298px;
+}
+
+.foto:hover {
+    opacity: 0.3;
+    transition: 0.9s;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+
+
   
 
 
 
 /*media queries*/
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .home-nav {
         height: 80px;
         justify-content: space-around;
@@ -212,6 +309,19 @@ iframe{
         font-size: .5rem;
       }
 
+      .foto{
+        max-width: 600px;
+        max-height: 440px;
+      }
+    
+      .music h3, 
+    button {
+      max-width: 600px; 
+    }
+    
+    button {
+      font-size: 1rem;
+    }
 
     
 }
@@ -274,6 +384,16 @@ iframe{
     padding: 30px 20px;
     font-size: 2rem;
   }
+
+   .foto{
+    width: 500px;
+    height: 440px;
+  }
+
+  .music h3, 
+button {
+  width: 500px; 
+}
     
 }
 
@@ -337,15 +457,26 @@ iframe{
   .hero-btn {
     letter-spacing: 3px;
     width: 60%;
-    padding: 30px 20px;
+    padding: 10px;
     font-size: 2rem;
   }
+
+  .foto{
+    width: 500px;
+    height: 440px;
+  }
+
+  .music h3, 
+button {
+  width: 500px; 
+}
+    
 
 }
 
 @media(min-width: 1201px) {
     .home-nav {
-        padding: 45px 20px;
+        padding: 20px;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -391,29 +522,64 @@ iframe{
 
       .main-section {
        width: 100%;
-       padding: 150px 30px 20px 30px;
+       padding: 85px 30px 20px 30px;
        margin: 0 auto;
        text-align: center;
 }
 .main-section h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
+}
+
+.musics {
+  flex-direction: row;
+  padding-top: 5px;
+}
+
+.the-voice-videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.video-2 {
+  display: flex;
+  flex-direction: row;
+
 }
 
 .the-voice-videos, .video-2, .video-1 {
-      gap: 60px;
+      gap: 30px;
 }
 
-
-      iframe{
-        height: 600px;
+.video-1 iframe{
+  height: 500px;
+  width: 90%;
 }
+
+  .video-2 iframe {
+    width: 43.7%;
+    height: 360px;
+
+  }
 
       .hero-btn {
         letter-spacing: 3px;
         width: 60%;
-        padding: 30px 20px;
+        padding: 10px;
         font-size: 2rem;
       }
+
+      .foto{
+        width: 380px;
+        height: 370px;
+      }
+
+      .music h3, 
+    button {
+      width: 380px; 
+    }
 }
 
 
