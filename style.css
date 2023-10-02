@@ -269,6 +269,15 @@ iframe{
   padding: 40px 0;
 }
 
+.contact span {
+  color:#fff;
+
+}
+
+.contact h1 {
+  margin-top: 20px;;
+}
+
 form {
   max-width: 60%;
   margin: 0 auto;
