@@ -105,9 +105,10 @@ html {
 }
 
 .main-section h1 {
-  margin-bottom: 20px;
-  font-size: .5rem;
+  margin: 20px 0;
+  font-size: .7rem;
   color:aliceblue;
+  text-shadow: 1px 4px 10px #d30a8c;
 }
 
 .the-voice-videos,
@@ -121,6 +122,11 @@ html {
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+
+.the-voice-videos {
+  padding-bottom: 50px;
+  border-bottom: 2px solid rgb(195, 168, 168);
 }
 
 
@@ -202,11 +208,13 @@ iframe{
         align-items: center;
         text-align: center;
         justify-content: center;
+        width: 95%;
+        height: 50vh;
     }
     
-    .music h3, 
+ 
     button {
-        width: 90%;
+        width: 100%;
         padding: 10px;
         text-align: center;
         font-size: 1.5rem;
@@ -232,8 +240,8 @@ iframe{
 
 
 .foto {
-    width: 90%;
-    height: 298px;
+    width: 100%;
+    height: 100%;
 }
 
 .foto:hover {
@@ -255,7 +263,8 @@ iframe{
   gap: 50px;
 }
 
-.video, .video iframe {
+.video,
+ .video iframe {
   width: 100%;
 }
 
@@ -267,7 +276,8 @@ iframe{
 .contact {
   width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 40px 0;
+  height: 100vh;
 }
 
 .contact span {
@@ -276,14 +286,14 @@ iframe{
 }
 
 .contact h1 {
-  margin-top: 20px;;
+  margin-top: 20px;
 }
 
 form {
-  max-width: 60%;
+  max-width: 90%;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid rgb(154, 138, 138); 
+  border: 1px solid #fff;
   border-radius: 5px;
 }
 
@@ -303,7 +313,7 @@ form input {
   background: transparent;
   outline: none;
   color: white;
-  border: 1px solid rgb(154, 138, 138); 
+  border: 1px solid #fff; 
   border-radius: 5px;
 }
 
@@ -311,9 +321,9 @@ textarea {
   width: 100%;
   height: 100px;
   background: transparent;
-  border: 1px solid rgb(154, 138, 138); 
+  border: 1px solid #fff; 
   outline: none;
-  color:rgba(248, 254, 255, 0.855);
+  color: #fff;
   padding: 5px;
   border-radius: 5px;
 }
@@ -353,7 +363,7 @@ form button,
 
 .privacy-right {
   color: white;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .footer-icons {
@@ -362,7 +372,8 @@ form button,
   gap: 20px;
 }
 
-.footer-icons .fa-brands {
+.footer-icons
+ .fa-brands {
   color: white;
   font-size: 1.4rem;
 }
@@ -374,7 +385,7 @@ form button,
 .host span {
   color: rgb(199, 160, 255);
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .danger {
@@ -408,7 +419,6 @@ form button,
   align-items: center;
   padding-top: 10px;
   padding-bottom: 0;
-  flex-wrap: wrap;
 }
 
 .articles {
@@ -421,7 +431,7 @@ form button,
 
 .article {
   margin: 0 auto;
-  min-width: 80%;
+  width: 80%;
   background-color: rgba(248, 66, 242, 0.7);
   padding: 6px;
   border-radius: 5px;
@@ -604,14 +614,24 @@ button {
 .articles-div {
   flex-direction: row;
   padding-top: 10px;
+  gap: 0px;
+  padding: 30px 10px 30px 10px;
+  border-bottom: 2px solid #9c0e63;
+}
+
+.articles {
+  margin: 0;
+  gap: 30px;
 }
 
 .article {
   border-radius: 5px;
+  width: 95%;
 }
 
-
-
+form  {
+  max-width: 60%;
+};
     
 }
 
@@ -664,7 +684,9 @@ button {
         font-size: 2rem;
       }
 
-      .the-voice-videos, .video-2, .video-1 {
+      .the-voice-videos, 
+      .video-2, 
+      .video-1 {
         gap: 50px;
   }
 
@@ -685,12 +707,37 @@ button {
   }
 
   .music h3, 
-button {
+  button {
   width: 500px; 
 }
 
 
+.articles-div {
+  width: 100%;
+  gap: 50px;
+}
+
+
+.articles {
+  flex-direction: row;
+  padding-bottom: 60px;
+  border-bottom: 2px solid rgb(129, 31, 131);
+}
+
+.article {
+  width: 35%;
+  height: 65vh;
+}
    
+.contact {
+  max-width: 70%;
+}
+
+form {
+  width: 60%;
+}
+
+
 
 }
 
@@ -736,23 +783,60 @@ button {
         display: none;
       }
 
-      .main-section h1 {
-        font-size: 2.3rem;
-      }
-
       .main-section {
        width: 100%;
-       padding: 120px 30px 20px 30px;
+       padding: 90px 30px 20px 30px;
        margin: 0 auto;
        text-align: center;
 }
+
 .main-section h1 {
-      font-size: 2rem;
+  font-size: 2.3rem;
+  margin-bottom: 0px;
 }
 
+
+.music-video {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  border-bottom: 2px solid white;
+}
+
+
 .musics {
+  width: 90%;
+  margin: 0 auto;
   flex-direction: row;
-  padding-top: 5px;
+  padding: 0;
+  gap: 40px;
+}
+
+.music {
+  min-width: 368px;
+}
+
+.foto{
+  width: 100%;
+  height: 100%;
+}
+
+.music button {
+  width: 100%;
+}
+
+.video-div {
+  flex-direction: row;
+  gap: 10px;
+}
+
+.videos {
+  width: 100vh;
+}
+
+.video,
+ .video iframe {
+  min-height: 400px;
 }
 
 .the-voice-videos {
@@ -791,22 +875,34 @@ button {
         font-size: 2rem;
       }
 
-      .foto{
-        width: 380px;
-        height: 370px;
-      }
 
-      .music h3, 
-    button {
-      width: 380px; 
+    .articles-div {
+      width: 100%;
+      gap: 50px;
     }
-
-    .video-div {
+    
+    .articles {
       flex-direction: row;
+      padding-bottom: 40px;
+      border-bottom: 2px solid rgb(129, 31, 131);
+    
+    }
+    
+    .article {
+      width: 40%;
+      height: 80vh;
+    }
+       
+    .contact {
+      max-width: 70%;
+    }
+    
+    form {
+      width: 60%;
     }
 
-    .video, .video iframe {
-      min-height: 400px;
+    .to-top {
+      margin-top: -30px  ;
     }
 }
 
@@ -827,8 +923,23 @@ body::before {
 }
 
 .home-body::before {
-    background-image: linear-gradient(rgba(17, 10, 4, 0.781), rgba(34, 16, 2, 0.6)), url(images/background-3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.358), rgba(20, 0, 22, 0.36)), url(images/back-ground.jpg)
+}
+
+  .about-body::before {
+    background-image: linear-gradient(rgba(5, 6, 7, 0.781), rgba(0, 0, 0, 0.6)), url(images/img11.jpeg);
+
   }
+
+  .contact-body::before {
+    background-image: linear-gradient(rgba(42, 13, 32, 0.781), rgba(0, 0, 0, 0.6)), url(images/background-6.jpg);
+
+  }
+
+  .services-body::before{
+      background-image: linear-gradient(rgba(29, 5, 27, 0.781), rgba(11, 6, 60, 0.6)), url(images/background-4.jpeg);
+   
+ }
 
 
 

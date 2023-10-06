@@ -7,11 +7,11 @@
         <link rel="stylesheet"
               href="https://fonts.googleapis.com/css?family=Tangerine">
               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-        <title>CONTACT | R SMITH</title>
+        <title>ABOUT | R SMITH</title>
     </head>
 
 <!--BODY SECTION-->
-<body class="contact-body">
+<body class="services-body">
     <nav class="home-nav">
         <div class="nav-links" id="navLinks">
             <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
@@ -35,9 +35,12 @@
         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
     </nav>
 
-
-
+    
 <section class="main-section">
+    <!--services-->
+
+
+
 
     <div class="contact" id="book-now">
         <span>TEXT ME! <br> (809) 397 6129</span>
@@ -88,19 +91,26 @@
             </div>
     
     </div>
+
 </section>
 
 
-    <script>
-        let navLinks = document.getElementById("navLinks");
 
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
 
-    </script>
-    </body>
-    </html>
+
+
+<!------------Java Script to toggle Menu------------->
+<script>
+    let navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
