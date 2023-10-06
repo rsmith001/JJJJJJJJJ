@@ -585,6 +585,11 @@ iframe{
     display: none;
   }
 
+  .music {
+    width: 100%;
+    height: 100%;
+  }
+
   iframe{
     height: 460px;
   }
@@ -701,15 +706,12 @@ form  {
     font-size: 2rem;
   }
 
-  .foto{
-    width: 500px;
-    height: 470px;
+  .music {
+    width: 100%;
+    height: 100%;
   }
+ 
 
-  .music h3, 
-  button {
-  width: 500px; 
-}
 
 
 .articles-div {
