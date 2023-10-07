@@ -38,12 +38,12 @@
 
 
 
-        <div class="first-page">
+        <div class="first-page" id="first-page">
             <h2>HI! WELCOME TO MY WORLD</h2>
             <div class="first-img">
                 <img src="images/IMG_0509.jpg" alt="">
             </div>
-            <input value="HOME" onclick="tuggleMenu()"/>
+            <input value="HOME" onclick="tuggleMenu()" readonly/>
         </div>
 
 <!--MAIN SECTION----------------------------->
@@ -210,9 +210,13 @@
 
         <script>
            let smithJean = document.getElementById("home-section");
+           let smithJe = document.getElementById("first-page");
 
            function tuggleMenu() {
-            smithJean.style.display = "block";
+                smithJean.style.display = "none";
+                smithJean.style.display = "block";
+                smithJe.style.display = "none";
+
            }
         </script>
 
