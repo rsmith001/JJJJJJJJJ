@@ -147,7 +147,7 @@ html {
   border-radius: 30%;
 }
 
-input {
+.first-page input {
   min-width: 20%;
   height: 50px;
   text-align: center;
@@ -161,7 +161,7 @@ input {
   animation: mymove 2s infinite;
 }
 
-input:hover {
+.first-page input:hover {
   background-color: #910255;
 }
 
