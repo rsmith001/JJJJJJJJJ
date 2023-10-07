@@ -16,14 +16,14 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
+                    <li><a onclick="tuggleMenu()">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="services.html">SERVICES</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
             <div>
-                <h1><a href="index.html" class="logo">RSmith</a></h1>
+                <h1 onclick="tuggleMenu()"><a class="logo" onclick="tuggleMenu()">RSmith</a></h1>
             </div>
             <div class="icons">
                 <a href="https://shorturl.at/dyFP8" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -37,10 +37,17 @@
         </nav>
 
 
+
+        <div class="first-page">
+            <h2>HI! WELCOME TO MY WORLD</h2>
+            <div class="first-img">
+                <img src="images/IMG_0509.jpg" alt="">
+            </div>
+            <input value="HOME" onclick="tuggleMenu()"/>
+        </div>
+
 <!--MAIN SECTION----------------------------->
-        <section class="main-section">
-
-
+        <section class="home-section" id="home-section">
 <!--MUSIC-VIDEO DIV----------------------------->
             <h1>MUSICS AND VIDEOS</h1>
             <div class="music-video">
@@ -200,6 +207,16 @@
 
 
         <!------------Java Script to toggle Menu------------->
+
+        <script>
+           let smithJean = document.getElementById("home-section");
+
+           function tuggleMenu() {
+            smithJean.style.display = "block";
+           }
+        </script>
+
+
         <script>
             let navLinks = document.getElementById("navLinks");
     
