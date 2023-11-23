@@ -40,7 +40,7 @@ html {
     .home-nav h1 a,
      .nav-links ul li a,
       .icons a, 
-      .footer-icons a {
+      .footer-icons a,button{
         text-decoration: none;
         cursor: pointer;
     }
@@ -142,7 +142,11 @@ html {
   color: transparent;
 }
 
-
+.first-page h3 {
+  color: transparent;
+  -webkit-text-stroke: .3px #fff;
+  font-size: 1rem;
+}
   
 
 .first-page input {
@@ -157,6 +161,7 @@ html {
   color: rgb(134, 173, 212);
   margin-top: 20px;
   animation: mymove 2s infinite;
+  font-weight: bolder;
 }
 
 .first-page input:hover {
@@ -276,7 +281,7 @@ iframe{
         border: 1px solid #111;
         color:#fff;
         border: 2px solid whitesmoke;
-        border-radius: 5px;
+        border-radius: 0px;
     }
     
     .music h2 {
@@ -308,7 +313,6 @@ iframe{
     width: 100%;
     height: 100%;
     border: 2px solid #fff;
-    border-radius: 10px;
 }
 
 .video-div {
@@ -407,7 +411,6 @@ form button,
   align-items: center;
   justify-content: center;
   gap: 40px;
-  border-top: 2px solid white;
 }
 
 .foot-1 {
@@ -503,6 +506,28 @@ form button,
 }
 
 
+.service-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+ }
+
+
+ .service {
+  height: 40px;
+  border: 2px solid #fff;
+  width: 200px;
+  margin-top: 30px;
+  text-align: center;
+  padding: 10px;
+  color: #ffe;
+  border-radius: 5px;
+  background-color: #710a75;
+  cursor: default;
+ }
 
 
 
@@ -588,11 +613,7 @@ iframe{
       max-width: 600px; 
       font-size: 1rem;
     }
-    
-   
 
-
-    
 }
 
 @media(min-width: 769px) and (max-width: 992px) {
@@ -692,6 +713,12 @@ button {
 form  {
   max-width: 60%;
 };
+
+.service-container {
+  flex-direction: row;
+ }
+  
+
     
 }
 
@@ -795,6 +822,11 @@ form  {
 form {
   width: 60%;
 }
+
+.service-container {
+  flex-direction: row;
+  border: 2px solid #fff;
+ }
 
 
 
@@ -966,6 +998,24 @@ form {
     .to-top {
       margin-top: -30px  ;
     }
+
+
+     .service-container {
+      flex-direction: row;
+      gap: 60px;
+      border: 2px solid #fff;
+      width: 50%;
+      border-radius: 10px;
+      padding: 30px;
+      align-items: center;
+      height: 60vh;
+     }
+      .container {
+        margin: 0;
+      }
+     
+
+    
 }
 
 
@@ -1002,6 +1052,7 @@ body::before {
       background-image: linear-gradient(rgba(29, 5, 27, 0.781), rgba(11, 6, 60, 0.6)), url(images/background-4.jpeg);
    
  }
+
 
 
 
