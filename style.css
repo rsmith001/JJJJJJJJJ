@@ -130,22 +130,20 @@ html {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  color: #fff;
 }
 
-.first-page  h2{
-  color: white;
+
+.first-page h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 0px;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
 }
 
-.first-img {
-  min-width: 50%;
-  height: 50%;
-}
 
-.first-img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 30%;
-}
+  
 
 .first-page input {
   min-width: 20%;
@@ -156,7 +154,7 @@ html {
   cursor: pointer;
   border: none;
   background-color: #2f0623;
-  color: white;
+  color: rgb(134, 173, 212);
   margin-top: 20px;
   animation: mymove 2s infinite;
 }
@@ -458,7 +456,7 @@ form button,
 
 @keyframes mymove {
   50% {border-color: rgb(255, 255, 255);
-      background-color: rgb(202, 43, 43);
+      background-color: rgb(97, 6, 93);
   }
 
 
