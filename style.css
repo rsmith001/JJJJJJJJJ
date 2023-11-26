@@ -40,7 +40,8 @@ html {
     .home-nav h1 a,
      .nav-links ul li a,
       .icons a, 
-      .footer-icons a,button{
+      .footer-icons a,
+      button{
         text-decoration: none;
         cursor: pointer;
     }
@@ -158,7 +159,7 @@ html {
   cursor: pointer;
   border: none;
   background-color: #2f0623;
-  color: rgb(134, 173, 212);
+  color: rgb(255, 255, 255);
   margin-top: 20px;
   animation: mymove 2s infinite;
   font-weight: bolder;
@@ -224,7 +225,7 @@ iframe{
 
   .music a, 
   .videos a, 
-  .host a {
+  .host a, div a {
     color:rgba(248, 254, 255, 0.855);
     text-decoration: none;
   }
@@ -395,7 +396,8 @@ form button {
 }
 
 form button,
- .service-content button {
+ .service-content button,
+ .distrokid {
     cursor: pointer;
     border: 1px solid rgb(98, 21, 96);
     animation: mymove 2s infinite;
@@ -411,6 +413,10 @@ form button,
   align-items: center;
   justify-content: center;
   gap: 40px;
+}
+
+.foot-1 a {
+  text-decoration: underline;
 }
 
 .foot-1 {
@@ -468,7 +474,6 @@ form button,
 
 
 /*about section*/
-
 .articles-div {
   margin: 0 auto;
   width: 100%;
@@ -522,14 +527,52 @@ form button,
   border: 5px solid #fff;
   width: 200px;
   margin-top: 30px;
-  text-align: center;
-  padding: 10px;
   color: #ffe;
   border-radius: 5px;
   background-color: #710a75;
   cursor: default;
  }
 
+ div {
+  font-size: 1em;
+  letter-spacing: 1px;
+  padding: 5px;
+ }
+
+ .distrokid {
+  padding: 3px;
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+ }
+
+ .private {
+  color: #fff;
+  text-align: left;
+  padding-left: 12px;
+  padding-right: 20px;
+  margin: 0 auto;
+ }
+
+ .private h2 {
+  margin-bottom: 20px;
+  font-size: 1em;
+ }
+
+ .private p {
+  margin-bottom: 20px;
+  font-size: .6em;
+ }
+
+  .private ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+
+  .private ul li {
+    font-size: .6rem;
+    margin-top: 5px;
+  }
 
 
 
@@ -718,6 +761,46 @@ form  {
 .service-container {
   flex-direction: row;
  }
+
+ div {
+  font-size: 1em;
+  letter-spacing: 1.2px;
+ }
+
+ .distrokid {
+  padding: 3px;
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+ }
+
+ .private {
+  color: #fff;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+ }
+
+ .private h2 {
+  margin-bottom: 20px;
+  font-size: 1.3em;
+ }
+
+ .private p {
+  margin-bottom: 20px;
+  font-size: .8em;
+ }
+
+  .private ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+
+  .private ul li {
+    font-size: .8rem;
+    margin-top: 5px;
+  }
    
 }
 
@@ -826,6 +909,45 @@ form {
   flex-direction: row;
   border: 2px solid #fff;
  }
+
+ div {
+  font-size: 1.3em;
+  letter-spacing: 1.2px;
+ }
+
+ .distrokid {
+  padding: 5px;
+
+ }
+
+
+ .private {
+  color: #fff;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+ }
+
+ .private h2 {
+  margin-bottom: 20px;
+  font-size: 1.3em;
+ }
+
+ .private p {
+  margin-bottom: 20px;
+  font-size: .8em;
+ }
+
+  .private ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+
+  .private ul li {
+    font-size: .8rem;
+    margin-top: 5px;
+  }
 
 }
 
@@ -1009,8 +1131,47 @@ form {
       .container {
         margin: 0;
       }
+
+      div {
+        font-size: 1em;
+        letter-spacing: 1.2px;
+       }
+      
+       .distrokid {
+        padding: 3px;
+        border-radius: 5px;
+        width: 50%;
+        margin: 0 auto;
+       }
      
 
+       .private {
+        color: #fff;
+        text-align: left;
+        padding-left: 50px;
+        padding-right: 30px;
+        margin: 0 auto;
+       }
+      
+       .private h2 {
+        margin-bottom: 20px;
+        font-size: 1.3em;
+       }
+      
+       .private p {
+        margin-bottom: 20px;
+        font-size: .8em;
+       }
+      
+        .private ul {
+          margin-left: 25px;
+          margin-bottom: 20px;
+        }
+      
+        .private ul li {
+          font-size: .8rem;
+          margin-top: 5px;
+        }
     
 }
 
@@ -1040,7 +1201,7 @@ body::before {
   }
 
   .contact-body::before {
-    background-image: linear-gradient(rgba(42, 13, 32, 0.781), rgba(0, 0, 0, 0.6)), url(images/background-6.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.6)), url(images/background-6.jpg);
 
   }
 
