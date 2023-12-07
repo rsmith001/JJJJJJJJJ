@@ -125,44 +125,61 @@ html {
 .first-page {
   margin: 0 auto;
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
   color: #fff;
+  padding-top: 80px;
+  position: fixed;
+}
+
+.first-page .image {
+  max-width: 650px;
+  max-height: 670px;
+}
+
+.first-page .first-content {
+  position: absolute;
+  top: 102%;
 }
 
 
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
 .first-page h1 {
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: 800;
   line-height: 0px;
   -webkit-text-stroke: 1px #fff;
   color: transparent;
+  
 }
 
 .first-page h3 {
   color: transparent;
   -webkit-text-stroke: .3px #fff;
   font-size: 1rem;
+  display: none;
 }
   
 
 .first-page input {
-  min-width: 20%;
-  height: 50px;
+  padding: 15px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius: 10px;
   cursor: pointer;
   border: none;
-  background-color: #2f0623;
-  color: rgb(255, 255, 255);
-  margin-top: 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   animation: mymove 2s infinite;
   font-weight: bolder;
+  position: absolute;
+  bottom: 8%;
 }
 
 .first-page input:hover {
@@ -803,6 +820,10 @@ form  {
     font-size: .8rem;
     margin-top: 5px;
   }
+
+  .first-page .first-content {
+    display: none;
+  }
    
 }
 
@@ -949,6 +970,14 @@ form {
   .private ul li {
     font-size: .8rem;
     margin-top: 5px;
+  }
+
+  .first-page .first-content {
+    display: none;
+  }
+
+  .first-page .first-content {
+    display: none;
   }
 
 }
@@ -1173,6 +1202,10 @@ form {
         .private ul li {
           font-size: .8rem;
           margin-top: 5px;
+        }
+
+        .first-page .first-content {
+          display: none;
         }
     
 }
