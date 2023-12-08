@@ -130,19 +130,18 @@ html {
   align-items: center;
   justify-content: center;
   color: #fff;
-  padding-top: 80px;
-  position: fixed;
-}
-
-.first-page .image {
-  max-width: 650px;
-  max-height: 670px;
+  height: 100vh;
 }
 
 .first-page .first-content {
-  position: absolute;
-  top: 102%;
+  margin: 0 auto;
 }
+
+.first-page .image {
+  max-width: 630px;
+  max-height: 650px;
+}
+
 
 
 .image img {
@@ -156,7 +155,8 @@ html {
   line-height: 0px;
   -webkit-text-stroke: 1px #fff;
   color: transparent;
-  
+  margin-top: 20px;
+  display: none;
 }
 
 .first-page h3 {
@@ -168,17 +168,16 @@ html {
   
 
 .first-page input {
-  padding: 15px;
+  padding: 10px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1rem; 
   border-radius: 10px;
   cursor: pointer;
   border: none;
   background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  color: rgb(152, 0, 0);
   animation: mymove 2s infinite;
   font-weight: bolder;
-  position: absolute;
   bottom: 8%;
 }
 
@@ -193,12 +192,13 @@ html {
  .video-1, 
  .videos {
   margin: 0 auto;
-  width: 98%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  padding: 0;
 }
 
 .the-voice-videos {
@@ -255,7 +255,7 @@ iframe{
       padding-bottom: 40px;
       display: flex;
       flex-direction: column;
-      gap: 60px;
+      gap: 20px;
     }
     
   .music-video h1 {
@@ -266,6 +266,8 @@ iframe{
         word-spacing: 10px;
         font-family: Arial, Helvetica, sans-serif;
         color: #fff;
+        margin-bottom: 0;
+        display: none;
     }
     
     .musics {
@@ -273,20 +275,19 @@ iframe{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        gap: 50px;
+        gap: 20px;
         margin: 0 auto;
-        padding-top: 20px;
+
     }
     
     .music {
         display: flex;
         flex-direction: column;
-        gap: 0px;
-        align-items: center;
-        text-align: center;
         justify-content: center;
         width: 95%;
-        height: 50vh;
+        padding: 0;
+        margin: 0 auto;
+
     }
     
  
@@ -294,12 +295,12 @@ iframe{
         width: 100%;
         padding: 10px;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1rem;
         background-color: #ff867d;;
         border: 1px solid #111;
         color:#fff;
         border: 2px solid whitesmoke;
-        border-radius: 0px;
+        margin: 0;
     }
     
     .music h2 {
@@ -336,16 +337,18 @@ iframe{
 }
 
 .video-div {
-  width: 100%;
-  padding: 30px 0;
+  width: 95%;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
+  margin: 0 auto;
 }
 
 .video,
  .video iframe {
   width: 100%;
+  margin: 0;
 }
 
 .videos h2 {
