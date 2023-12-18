@@ -131,40 +131,28 @@ html {
   justify-content: center;
   color: #fff;
   height: 100vh;
+  padding: 0 20px 0 20px;
 }
 
-.first-page .first-content {
-  margin: 0 auto;
-}
+
 
 .first-page .image {
   max-width: 630px;
   max-height: 650px;
+  display: none;
 }
 
-
+.first-page a {
+  cursor: pointer;
+}
 
 .image img {
   width: 100%;
-  height: 100%;
+  height: 100%;  
+  border-radius: 5%;
 }
 
-.first-page h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  line-height: 0px;
-  -webkit-text-stroke: 1px #fff;
-  color: transparent;
-  margin-top: 20px;
-  display: none;
-}
 
-.first-page h3 {
-  color: transparent;
-  -webkit-text-stroke: .3px #fff;
-  font-size: 1rem;
-  display: none;
-}
   
 
 .first-page input {
@@ -174,8 +162,8 @@ html {
   border-radius: 10px;
   cursor: pointer;
   border: none;
-  background-color: #ffffff;
-  color: rgb(152, 0, 0);
+  background-color: rgb(184, 130, 83);
+  color: rgb(255, 255, 255);
   animation: mymove 2s infinite;
   font-weight: bolder;
   bottom: 8%;
@@ -247,7 +235,8 @@ iframe{
     text-decoration: none;
   }
   
-  .music a:hover, .videos a:hover {
+  .music a:hover, 
+  .videos a:hover {
     text-decoration: underline;
   }
   
@@ -271,13 +260,23 @@ iframe{
     }
     
     .musics {
+        width: 100%;
+        padding: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
         margin: 0 auto;
+    }
 
+    .sepp {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
     }
     
     .music {
@@ -287,7 +286,7 @@ iframe{
         width: 95%;
         padding: 0;
         margin: 0 auto;
-
+        gap: 0;
     }
     
  
@@ -338,6 +337,7 @@ iframe{
 
 .video-div {
   width: 95%;
+  min-height: 100vh;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -670,9 +670,15 @@ iframe{
         font-size: .5rem;
       }
 
-      .foto{
+
+      .music{
         max-width: 600px;
         max-height: 440px;
+      }
+
+      .foto {
+        width: 100%;
+        height: 100%;
       }
     
     button {
@@ -1043,42 +1049,52 @@ form {
 }
 
 
+
 .music-video {
   width: 100%;
-  height: 100vh;
   justify-content: center;
   border-bottom: 2px solid white;
+  padding: 0;
 }
 
 
 .musics {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  flex-direction: row;
   padding: 0;
+  flex-direction: column;
   gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto {
+  min-width: 368px;
+  min-height: 368px;
 }
 
 .music {
-  min-width: 368px;
-}
-
-.foto{
-  width: 100%;
-  height: 100%;
+  width: 368px;
 }
 
 .music button {
   width: 100%;
 }
 
+.sepp {
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .video-div {
   flex-direction: row;
   gap: 10px;
+  margin-top: 100px;
 }
 
 .videos {
-  width: 100vh;
+  width: 100%;
 }
 
 .video,
@@ -1207,9 +1223,21 @@ form {
           margin-top: 5px;
         }
 
-        .first-page .first-content {
-          display: none;
+        .first-page {
+          min-height: auto;
+          padding-top: 50px;
         }
+
+        .first-page .image {
+          height: 550px;
+          width: 550px;
+          gap: 10px;
+        }
+
+        .first-page input {
+          margin-top: 20px;
+        }
+
     
 }
 
