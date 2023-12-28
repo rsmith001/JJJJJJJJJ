@@ -261,29 +261,30 @@ iframe{
     
     .musics {
         width: 100%;
-        padding: 30px;
+        padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
         margin: 0 auto;
     }
 
     .sepp {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 20px;
       align-items: center;
       justify-content: center;
       margin: 0 auto;
     }
     
-    .music {
+    .music,
+    .musics iframe {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 95%;
+        width: 100%;
         padding: 0;
         margin: 0 auto;
         gap: 0;
